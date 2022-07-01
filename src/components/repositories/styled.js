@@ -3,9 +3,46 @@ import { Tabs, TabList, Tab, TabPanel } from "react-tabs";
 
 export const WrapperTabs = styled(Tabs)``;
 
-export const WrapperTabList = styled(TabList)``;
+export const WrapperTabList = styled(TabList)`
+    display: flex;
+    gap: 10px;
+    margin: 10px 0px ;
 
-export const WrapperTab = styled(Tab)``;
+`;
+WrapperTabList.tabsRole = 'TabList';
 
-export const WrapperTabPanel = styled(TabPanel)``;
+export const WrapperTab = styled(Tab)`
+    padding: 10px;
+    cursor: pointer;
+    background-color: aliceblue;
+    border: 1px solid black;
+    text-align: center;
+    transition: .3s;
+    border-radius: 20px;
+    &:hover{
+        background-color: black;
+        color: white;
+        transition: .3s;
+    }
+    &.is-selected{
+        background-color: black;
+        color: white;
+    }
+`;
+WrapperTab.tabsRole = 'Tab';
+
+
+
+export const WrapperTabPanel = styled(TabPanel)`
+    display: none;
+    border: 1px solid black;
+    padding: 8px;
+
+    &.is-selected{
+        display: block;
+    }
+    
+`;
+WrapperTabPanel.tabsRole = 'TabPanel';
+
 

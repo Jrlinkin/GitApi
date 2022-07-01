@@ -3,7 +3,8 @@ import React from "react";
 import Layout from "./components/layout";
 import Profile from "./components/profile";
 
-import ResetCSS from "./global/resetCSS"
+import ResetCSS from "./global/resetCSS";
+import Repositories from "./components/repositories";
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
       <ResetCSS/>
       <Layout>
         <Profile/>
-        <div> Repositories</div>
+        <Repositories/>
       </Layout>
     </main>
   );

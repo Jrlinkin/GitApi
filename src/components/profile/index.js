@@ -25,7 +25,7 @@ const Profile = () => {
                         <span>5</span>
                     </div>
                     <div>
-                        <h3>Starreds</h3>
+                        <h3>Starred</h3>
                         <span>5</span>
                     </div>
                     <div>
