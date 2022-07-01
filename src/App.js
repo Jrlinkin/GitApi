@@ -1,9 +1,19 @@
+import React from "react";
 
+import Layout from "./components/layout";
+import Profile from "./components/profile";
 
+import ResetCSS from "./global/resetCSS"
 
-function App() {
+const App = () => {
   return (
-    <h1> <a href="https://github.com/Jrlinkin" target='_blank' rel="noreferrer">Erick Rinald</a></h1>
+    <main>
+      <ResetCSS/>
+      <Layout>
+        <Profile/>
+        <div> Repositories</div>
+      </Layout>
+    </main>
   );
 }
 
