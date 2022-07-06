@@ -12,15 +12,18 @@ export const Wrapper = styled.div`
     }
 
     button{
-        background-color: #0b79ea;
-        color: white;
+        background-color: aliceblue;
         margin-left: 12px;
+        font-weight: bold;
         padding: 0 16px;
         transition: all .3s;
         position: relative;
+        border: 2px solid black;
+        border-radius: 10px;
 
         &:hover{
             background-color: black;
+            color: white;
             transition: all .1s;
             box-shadow: 0px 3px 0px 0px orange;
         }

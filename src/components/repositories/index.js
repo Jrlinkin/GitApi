@@ -35,6 +35,7 @@ const Repositories = () => {
                 </S.WrapperTabList>
                 
                 <S.WrapperTabPanel>
+                    <S.WarapperList>
                     {githubState.repositories.length !== 0 ?
                        githubState.repositories.map((item) => (
                           <RepositoryItem 
@@ -44,9 +45,11 @@ const Repositories = () => {
                           linkToRepo={item.html_url}
                       />
                     )) :  <p>Este usuario não possui repositorios ainda!</p> }
+                    </S.WarapperList>
                 </S.WrapperTabPanel>
 
                 <S.WrapperTabPanel>
+                <S.WarapperList>
                 {githubState.starred.length !== 0 ?
                 githubState.starred.map((item) => (
                     <RepositoryItem 
@@ -56,6 +59,7 @@ const Repositories = () => {
                         linkToRepo={item.html_url}
                         />
                     )) :  <p>Este usuario não possui starred ainda!</p> }
+                    </S.WarapperList>
                 </S.WrapperTabPanel>
 
             </S.WrapperTabs>

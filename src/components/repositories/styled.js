@@ -36,12 +36,27 @@ WrapperTab.tabsRole = 'Tab';
 export const WrapperTabPanel = styled(TabPanel)`
     display: none;
     padding: 8px;
+    width: 100%;
+    /* background-color: black; */
 
     &.is-selected{
         display: block;
+        width: 100%;
+    /* background-color: black; */
+
+
     }
     
 `;
 WrapperTabPanel.tabsRole = 'TabPanel';
+
+export const WarapperList = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* background-color: aliceblue; */
+    gap:5%;
+`;
+
 
 

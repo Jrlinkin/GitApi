@@ -2,27 +2,31 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
     align-items: center;
-    /* background-color: red;  */
-    width: 98vw;
+
 `;
 export const WrapperImg = styled.img`
+        display: flex;
+        flex-wrap: wrap;
         max-width: 150px;
         border-radius: 100%;
         border: 2px solid black;
         margin: 20px;
 `;
 export const WrapperUserInfos = styled.div`
-    /* background-color: blue; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 100%;
+    padding: 10px;
     height: 150px;
     margin-left: 8px;
     h1{
         font-weight: bold;
         font-size: 32px;
+        display: flex;
+        flex-wrap: wrap;
     }
     h4{
         font-size: 20px;  
@@ -37,7 +41,7 @@ export const WrapperUsername = styled.div`
         font-weight: bold;
     }
     a{
-        color: #333838;
+        color: blue;
         font-size: 20px;
         :hover{
             color: #000875;
@@ -47,10 +51,11 @@ export const WrapperUsername = styled.div`
 
 export const WrapperStatusCount = styled.div`
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     /* background-color: coral; */
     gap:10px;
-    width: 300px;
+    margin-top: 10px;
     div{
         text-align: center;
     }
