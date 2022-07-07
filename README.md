@@ -2,6 +2,8 @@
 
 Apenas para fins de aprendizado, ultilizando a API do Github, e tambem styled-components.
 
+Versel link: https://git-8nbwd06dw-jrlinkin.vercel.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
